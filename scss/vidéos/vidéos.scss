@@ -1,0 +1,42 @@
+@import "../navbar/navbar.scss";
+
+//Reset
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 5rem;
+
+  .vid {
+    margin-top: 1rem;
+
+    &:nth-child(even) {
+      margin-left: 2rem;
+    }
+  }
+
+  h1 {
+    text-align: center;
+    font-family: "Red Hat Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 127px;
+  }
+
+  iframe {
+    border: 1px solid #000;
+    height: 20rem;
+    width: 35.5rem;
+  }
+}

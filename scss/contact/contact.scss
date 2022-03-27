@@ -1,0 +1,191 @@
+@import "../navbar/navbar.scss";
+
+//Reset
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+//Pc Reponsive
+@media all and (min-width: 1024px) {
+  main {
+    margin-bottom: 5rem;
+
+    #coo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 5rem;
+
+      #text {
+        h1 {
+          border-bottom: 3px solid #000;
+          font-family: "Red Hat Mono";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 48px;
+          line-height: 64px;
+        }
+
+        p {
+          font-family: "Red Hat Mono";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 32px;
+          line-height: 42px;
+        }
+      }
+
+      iframe {
+        margin-left: 5rem;
+        margin-top: -1.5rem;
+      }
+    }
+
+    #facebook {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 3rem;
+
+      h1 {
+        text-align: center;
+        font-family: "Red Hat Mono";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 45px;
+      }
+    }
+  }
+}
+
+//iPad Responsive
+@media all and (min-width: 480px) and (max-width: 1000px) {
+  main {
+    margin-bottom: 5rem;
+
+    #coo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 5rem;
+      margin-left: 1rem;
+
+      #text {
+        h1 {
+          border-bottom: 3px solid #000;
+          font-family: "Red Hat Mono";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 48px;
+          line-height: 64px;
+        }
+
+        p {
+          font-family: "Red Hat Mono";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 32px;
+          line-height: 42px;
+        }
+      }
+
+      iframe {
+        margin-left: 4rem;
+        margin-top: -1.5rem;
+        margin-right: 1rem;
+      }
+    }
+
+    #facebook {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 3rem;
+
+      h1 {
+        text-align: center;
+        font-family: "Red Hat Mono";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 45px;
+      }
+    }
+  }
+}
+
+//Mobile Responsive
+@media all and (max-width: 480px) {
+  main {
+    margin-top: -5rem;
+    margin-bottom: 5rem;
+
+    #coo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 5rem;
+      flex-direction: column;
+
+      #text {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        h1 {
+          border-bottom: 3px solid #000;
+          width: 90%;
+          font-family: "Red Hat Mono";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 48px;
+          line-height: 64px;
+        }
+
+        p {
+          margin-top: -1.5rem;
+          margin-bottom: 3rem;
+          font-family: "Red Hat Mono";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 32px;
+          line-height: 42px;
+        }
+      }
+
+      iframe {
+        margin-left: 5rem;
+        margin-top: -1.5rem;
+        width: 90%;
+        margin: 0 auto;
+      }
+    }
+
+    #facebook {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 3rem;
+
+      h1 {
+        text-align: center;
+        font-family: "Red Hat Mono";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 45px;
+      }
+    }
+  }
+}
