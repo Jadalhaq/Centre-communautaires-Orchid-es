@@ -161,7 +161,6 @@ body {
     }
 
     #facebook {
-      width: 90%;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -169,7 +168,9 @@ body {
       margin: 5rem auto;
 
       .fb-post {
-        margin-bottom: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
 
       .fb-page {

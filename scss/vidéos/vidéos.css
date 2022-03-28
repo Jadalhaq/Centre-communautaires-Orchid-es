@@ -1,10 +1,3 @@
-/*Reset*/
-/* Add a black background color to the top navigation */
-/* Style the links inside the navigation bar */
-/* Add an active class to highlight the current page */
-/* Hide the link that should open and close the topnav on small screens */
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 body {
   margin: 0;
   padding: 0;
@@ -27,13 +20,9 @@ body {
   margin-left: 1rem;
   float: left;
 }
-#title #lettres {
-  color: #fff;
-  font-family: "Red Hat Mono";
-  font-style: italic;
-  font-weight: 500;
-  font-size: 48px;
-  padding-right: 1rem;
+#title #logo {
+  margin-top: 0.3rem;
+  margin-right: 0.9rem;
 }
 #title #name {
   color: #fff;
@@ -53,15 +42,11 @@ body {
 .topnav a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: #fff;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-}
-.topnav a.active {
-  background-color: #04aa6d;
-  color: white;
 }
 .topnav .icon {
   display: none;
@@ -73,13 +58,14 @@ body {
     justify-content: flex-end;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
   .topnav a:not(:first-child) {
     display: none;
   }
   .topnav a.icon {
     float: right;
     display: block;
+    margin-top: 0.2rem;
   }
 
   .topnav.responsive {
@@ -114,10 +100,7 @@ body {
     margin-bottom: 5rem;
   }
   main .vid {
-    margin-top: 1rem;
-  }
-  main .vid:nth-child(even) {
-    margin-left: 2rem;
+    margin: 1rem auto;
   }
   main h1 {
     text-align: center;
