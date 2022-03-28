@@ -18,7 +18,12 @@
       nonce="NJxDNgQG"
     ></script>
 
-    <nav>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <div class="topnav" id="myTopnav">
       <div id="title">
         <div id="lettres">CCO</div>
         <div id="vr"></div>
@@ -27,18 +32,20 @@
           des Orchidées
         </div>
       </div>
+
       <div id="navbar">
-        <a href="../index.html" class="navElement">Accueil</a>
-        <div id="vr"></div>
-        <a href="./qsn.html" class="navElement">Qui sommes-nous</a>
-        <div id="vr"></div>
-        <a href="./vidéos.html" class="navElement">Vidéos</a>
-        <div id="vr"></div>
-        <a href="./don.html" class="navElement">Faire un don</a>
-        <div id="vr"></div>
-        <a href="#" class="navElement">Nous contacter</a>
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="../index.html">Accueil</a>
+        <a href="./qsn.html">Qui sommes-nous</a>
+        <a href="./vidéos.html">Vidéos</a>
+        <a href="./don.html">Faire un don</a>
+        <a href="#">Nous contacter</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
       </div>
-    </nav>
+    </div>
 
     <main>
       <div id="coo">
@@ -93,5 +100,17 @@
         </div>
       </div>
     </main>
+
+    <script>
+      /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
   </body>
 </html>

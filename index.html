@@ -4,14 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Centre communautaire des orchidées</title>
+    <title>Document</title>
 
     <script
       src="https://kit.fontawesome.com/e28d607a62.js"
       crossorigin="anonymous"
     ></script>
 
-    <link rel="stylesheet" href="scss/index/index.css" />
+    <link rel="stylesheet" href="./scss/navbar/navbar.css" />
+    <link rel="stylesheet" href="./scss/index/index.css" />
   </head>
   <body>
     <div id="fb-root"></div>
@@ -20,10 +21,15 @@
       defer
       crossorigin="anonymous"
       src="https://connect.facebook.net/fr_CA/sdk.js#xfbml=1&version=v13.0"
-      nonce="kgpeJH8l"
+      nonce="e35YvEQQ"
     ></script>
 
-    <nav>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <div class="topnav" id="myTopnav">
       <div id="title">
         <div id="lettres">CCO</div>
         <div id="vr"></div>
@@ -32,18 +38,20 @@
           des Orchidées
         </div>
       </div>
+
       <div id="navbar">
-        <a href="#" class="navElement">Accueil</a>
-        <div id="vr"></div>
-        <a href="html/qsn.html" class="navElement">Qui sommes-nous</a>
-        <div id="vr"></div>
-        <a href="./html/vidéos.html" class="navElement">Vidéos</a>
-        <div id="vr"></div>
-        <a href="./html/don.html" class="navElement">Faire un don</a>
-        <div id="vr"></div>
-        <a href="./html/contact.html" class="navElement">Nous contacter</a>
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="#">Accueil</a>
+        <a href="./html/qsn.html">Qui sommes-nous</a>
+        <a href="./html/vidéos.html">Vidéos</a>
+        <a href="./html/don.html">Faire un don</a>
+        <a href="./html/contact.html">Nous contacter</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
       </div>
-    </nav>
+    </div>
 
     <main>
       <div id="cards">
@@ -133,5 +141,17 @@
         </div>
       </div>
     </main>
+
+    <script>
+      /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
   </body>
 </html>
