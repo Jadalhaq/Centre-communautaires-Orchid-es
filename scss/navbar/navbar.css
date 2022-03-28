@@ -73,7 +73,7 @@ body {
     justify-content: flex-end;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
   .topnav a:not(:first-child) {
     display: none;
   }
