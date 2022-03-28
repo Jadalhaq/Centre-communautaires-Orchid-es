@@ -10,6 +10,29 @@ body {
   vertical-align: baseline;
 }
 
+//Activités
+#cards {
+  .card {
+    position: relative;
+    text-align: center;
+
+    img {
+      height: 100%;
+      width: 100%;
+      filter: blur(1.5px);
+      border-radius: 15px;
+    }
+
+    .text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin-top: -1.5rem;
+    }
+  }
+}
+
 //Pc Reponsive
 @media all and (min-width: 1024px) {
   main {
@@ -31,7 +54,6 @@ body {
         .card {
           width: 20rem;
           height: 10rem;
-          background-color: #31afd4;
           text-align: center;
           display: flex;
           flex-direction: column;
@@ -65,18 +87,6 @@ body {
           i {
             font-size: 3rem;
           }
-        }
-
-        .masjid {
-          background-color: #6ca910;
-        }
-
-        .sports {
-          background-color: #dbad5c;
-        }
-
-        .arabe {
-          background-color: #e250cf;
         }
       }
     }
@@ -116,7 +126,6 @@ body {
         .card {
           width: 20rem;
           height: 10rem;
-          background-color: #31afd4;
           text-align: center;
           display: flex;
           flex-direction: column;
@@ -147,18 +156,6 @@ body {
             font-size: 3rem;
             color: #000;
           }
-        }
-
-        .masjid {
-          background-color: #6ca910;
-        }
-
-        .sports {
-          background-color: #dbad5c;
-        }
-
-        .arabe {
-          background-color: #e250cf;
         }
       }
     }
@@ -204,7 +201,6 @@ body {
         .card {
           width: 20rem;
           height: 10rem;
-          background-color: #31afd4;
           text-align: center;
           display: flex;
           flex-direction: column;
@@ -235,18 +231,6 @@ body {
             font-size: 3rem;
             color: #000;
           }
-        }
-
-        .masjid {
-          background-color: #6ca910;
-        }
-
-        .sports {
-          background-color: #dbad5c;
-        }
-
-        .arabe {
-          background-color: #e250cf;
         }
       }
     }

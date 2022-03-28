@@ -27,13 +27,9 @@ body {
   margin-left: 1rem;
   float: left;
 }
-#title #lettres {
-  color: #fff;
-  font-family: "Red Hat Mono";
-  font-style: italic;
-  font-weight: 500;
-  font-size: 48px;
-  padding-right: 1rem;
+#title #logo {
+  margin-top: 0.3rem;
+  margin-right: 0.9rem;
 }
 #title #name {
   color: #fff;
@@ -80,6 +76,7 @@ body {
   .topnav a.icon {
     float: right;
     display: block;
+    margin-top: 0.2rem;
   }
 
   .topnav.responsive {

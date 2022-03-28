@@ -27,13 +27,9 @@ body {
   margin-left: 1rem;
   float: left;
 }
-#title #lettres {
-  color: #fff;
-  font-family: "Red Hat Mono";
-  font-style: italic;
-  font-weight: 500;
-  font-size: 48px;
-  padding-right: 1rem;
+#title #logo {
+  margin-top: 0.3rem;
+  margin-right: 0.9rem;
 }
 #title #name {
   color: #fff;
@@ -73,13 +69,14 @@ body {
     justify-content: flex-end;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
   .topnav a:not(:first-child) {
     display: none;
   }
   .topnav a.icon {
     float: right;
     display: block;
+    margin-top: 0.2rem;
   }
 
   .topnav.responsive {
@@ -105,6 +102,24 @@ body {
   vertical-align: baseline;
 }
 
+#cards .card {
+  position: relative;
+  text-align: center;
+}
+#cards .card img {
+  height: 100%;
+  width: 100%;
+  filter: blur(1.5px);
+  border-radius: 15px;
+}
+#cards .card .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: -1.5rem;
+}
+
 @media all and (min-width: 1024px) {
   main #cards {
     display: flex;
@@ -123,7 +138,6 @@ body {
   main #cards a .card {
     width: 20rem;
     height: 10rem;
-    background-color: #31afd4;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -154,15 +168,6 @@ body {
   main #cards a .card i {
     font-size: 3rem;
   }
-  main #cards a .masjid {
-    background-color: #6ca910;
-  }
-  main #cards a .sports {
-    background-color: #dbad5c;
-  }
-  main #cards a .arabe {
-    background-color: #e250cf;
-  }
   main #facebook {
     width: 90%;
     display: flex;
@@ -192,7 +197,6 @@ body {
   main #cards a .card {
     width: 20rem;
     height: 10rem;
-    background-color: #31afd4;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -220,15 +224,6 @@ body {
   main #cards a .card i {
     font-size: 3rem;
     color: #000;
-  }
-  main #cards a .masjid {
-    background-color: #6ca910;
-  }
-  main #cards a .sports {
-    background-color: #dbad5c;
-  }
-  main #cards a .arabe {
-    background-color: #e250cf;
   }
   main #facebook {
     width: 90%;
@@ -265,7 +260,6 @@ body {
   main #cards a .card {
     width: 20rem;
     height: 10rem;
-    background-color: #31afd4;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -293,15 +287,6 @@ body {
   main #cards a .card i {
     font-size: 3rem;
     color: #000;
-  }
-  main #cards a .masjid {
-    background-color: #6ca910;
-  }
-  main #cards a .sports {
-    background-color: #dbad5c;
-  }
-  main #cards a .arabe {
-    background-color: #e250cf;
   }
   main #facebook div {
     display: flex;

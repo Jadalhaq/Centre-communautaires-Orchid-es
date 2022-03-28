@@ -31,14 +31,12 @@ body {
   flex-direction: row;
   margin-left: 1rem;
   float: left;
-  #lettres {
-    color: $color_1;
-    font-family: $font-family_1;
-    font-style: italic;
-    font-weight: 500;
-    font-size: 48px;
-    padding-right: 1rem;
+
+  #logo {
+    margin-top: 0.3rem;
+    margin-right: 0.9rem;
   }
+
   #name {
     color: $color_1;
     font-family: $font-family_1;
@@ -88,6 +86,7 @@ body {
     a.icon {
       float: right;
       display: block;
+      margin-top: 0.2rem;
     }
   }
   .topnav.responsive {
