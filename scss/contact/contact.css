@@ -11,19 +11,27 @@ body {
   border-left: 2px solid #fff;
   height: 2rem;
   position: relative;
-  transform: translateY(35%);
+  -webkit-transform: translateY(35%);
+          transform: translateY(35%);
 }
 
 #title {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   margin-left: 1rem;
   float: left;
 }
+
 #title #logo {
   margin-top: 0.3rem;
   margin-right: 0.9rem;
 }
+
 #title #name {
   color: #fff;
   font-family: "Red Hat Mono";
@@ -32,13 +40,15 @@ body {
   font-size: 16px;
   padding-left: 1rem;
   position: relative;
-  transform: translateY(15%);
+  -webkit-transform: translateY(15%);
+          transform: translateY(15%);
 }
 
 .topnav {
   background-color: #31afd4;
   overflow: hidden;
 }
+
 .topnav a {
   float: left;
   display: block;
@@ -48,16 +58,22 @@ body {
   text-decoration: none;
   font-size: 17px;
 }
+
 .topnav .icon {
   display: none;
 }
 
 @media all and (min-width: 1024px) {
   .topnav #navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
 }
+
 @media screen and (max-width: 1000px) {
   .topnav a:not(:first-child) {
     display: none;
@@ -67,7 +83,6 @@ body {
     display: block;
     margin-top: 0.2rem;
   }
-
   .topnav.responsive {
     position: relative;
   }
@@ -82,6 +97,7 @@ body {
     text-align: left;
   }
 }
+
 body {
   margin: 0;
   padding: 0;
@@ -96,9 +112,15 @@ body {
     margin-bottom: 5rem;
   }
   main #coo {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-top: 5rem;
   }
   main #coo #text h1 {
@@ -121,10 +143,19 @@ body {
     margin-top: -1.5rem;
   }
   main #facebook {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-top: 3rem;
   }
   main #facebook h1 {
@@ -136,14 +167,21 @@ body {
     line-height: 45px;
   }
 }
+
 @media all and (min-width: 480px) and (max-width: 1000px) {
   main {
     margin-bottom: 5rem;
   }
   main #coo {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-top: 5rem;
     margin-left: 1rem;
   }
@@ -168,10 +206,19 @@ body {
     margin-right: 1rem;
   }
   main #facebook {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-top: 3rem;
   }
   main #facebook h1 {
@@ -183,24 +230,43 @@ body {
     line-height: 45px;
   }
 }
+
 @media all and (max-width: 480px) {
   main {
     margin-top: -5rem;
     margin-bottom: 5rem;
   }
   main #coo {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-top: 5rem;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   main #coo #text {
     text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   main #coo #text h1 {
     border-bottom: 3px solid #000;
@@ -227,10 +293,19 @@ body {
     margin: 0 auto;
   }
   main #facebook {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-top: 3rem;
   }
   main #facebook h1 {
@@ -242,5 +317,4 @@ body {
     line-height: 45px;
   }
 }
-
 /*# sourceMappingURL=contact.css.map */

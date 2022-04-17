@@ -12,23 +12,32 @@ body {
 
 //Activités
 #cards {
-  .card {
-    position: relative;
-    text-align: center;
+  a {
+    text-decoration: none;
+    margin: 0 auto;
 
-    img {
-      height: 100%;
-      width: 100%;
-      filter: blur(1.5px);
-      border-radius: 15px;
+    &:visited, &:link {
+      color: #000;
     }
 
-    .text {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      margin-top: -1.5rem;
+    .card {
+      position: relative;
+      text-align: center;
+
+      img {
+        height: 100%;
+        width: 100%;
+        filter: blur(1.5px);
+        border-radius: 15px;
+      }
+
+      .text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: -1.5rem;
+      }
     }
   }
 }
@@ -43,14 +52,6 @@ body {
       align-items: center;
       margin-top: 5rem;
 
-      a {
-        text-decoration: none;
-        margin: 0 auto;
-
-        &:visited {
-          color: #000;
-        }
-
         .card {
           width: 20rem;
           height: 10rem;
@@ -64,7 +65,7 @@ body {
           margin: 0 auto;
 
           &:hover {
-            transform: scale(1.1, 1.1);
+            transform: scale(1.05, 1.05);
             transition: transform 300ms;
           }
 
@@ -88,7 +89,6 @@ body {
             font-size: 3rem;
           }
         }
-      }
     }
 
     #facebook {
